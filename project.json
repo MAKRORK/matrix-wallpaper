@@ -1,0 +1,179 @@
+{
+  "title": "walp",
+  "description": "Customizable Matrix rain with image-to-ASCII coloring.",
+  "file": "index.html",
+  "type": "web",
+  "general": {
+    "properties": {
+      "fontsize": {
+        "order": 0,
+        "text": "Font size (px)",
+        "type": "slider",
+        "value": 12,
+        "min": 6,
+        "max": 64,
+        "fraction": false
+      },
+      "minlength": {
+        "order": 1,
+        "text": "Minimum stream length",
+        "type": "slider",
+        "value": 7,
+        "min": 1,
+        "max": 200,
+        "fraction": false
+      },
+      "maxlength": {
+        "order": 2,
+        "text": "Maximum stream length",
+        "type": "slider",
+        "value": 20,
+        "min": 1,
+        "max": 200,
+        "fraction": false
+      },
+      "density": {
+        "order": 3,
+        "text": "Density",
+        "type": "slider",
+        "value": 50,
+        "min": 1,
+        "max": 100,
+        "fraction": false
+      },
+      "useimg": {
+        "order": 4,
+        "text": "Use image",
+        "type": "bool",
+        "value": true
+      },
+      "image": {
+        "order": 5,
+        "text": "Image",
+        "type": "file",
+        "value": "src/img/img.jpg",
+        "fileType": "image"
+      },
+      "usecolor": {
+        "order": 6,
+        "text": "Use image colors",
+        "type": "bool",
+        "value": true
+      },
+      "maincolor": {
+        "order": 7,
+        "text": "Main / monochrome color",
+        "type": "color",
+        "value": "0 0.666667 0"
+      },
+      "headcolor": {
+        "order": 8,
+        "text": "Classic rain head color",
+        "type": "color",
+        "value": "1 1 1"
+      },
+      "backgroundcolor": {
+        "order": 9,
+        "text": "Background color",
+        "type": "color",
+        "value": "0 0 0"
+      },
+      "palette0": {
+        "order": 10,
+        "text": "Image palette 01",
+        "type": "color",
+        "value": "0.0 0.0 0.0"
+      },
+      "palette1": {
+        "order": 11,
+        "text": "Image palette 02",
+        "type": "color",
+        "value": "0.666667 0.0 0.0"
+      },
+      "palette2": {
+        "order": 12,
+        "text": "Image palette 03",
+        "type": "color",
+        "value": "0.0 0.666667 0.0"
+      },
+      "palette3": {
+        "order": 13,
+        "text": "Image palette 04",
+        "type": "color",
+        "value": "0.666667 0.333333 0.0"
+      },
+      "palette4": {
+        "order": 14,
+        "text": "Image palette 05",
+        "type": "color",
+        "value": "0.0 0.0 0.666667"
+      },
+      "palette5": {
+        "order": 15,
+        "text": "Image palette 06",
+        "type": "color",
+        "value": "0.666667 0.0 0.666667"
+      },
+      "palette6": {
+        "order": 16,
+        "text": "Image palette 07",
+        "type": "color",
+        "value": "0.0 0.666667 0.666667"
+      },
+      "palette7": {
+        "order": 17,
+        "text": "Image palette 08",
+        "type": "color",
+        "value": "0.666667 0.666667 0.666667"
+      },
+      "palette8": {
+        "order": 18,
+        "text": "Image palette 09",
+        "type": "color",
+        "value": "0.333333 0.333333 0.333333"
+      },
+      "palette9": {
+        "order": 19,
+        "text": "Image palette 10",
+        "type": "color",
+        "value": "1.0 0.333333 0.333333"
+      },
+      "palette10": {
+        "order": 20,
+        "text": "Image palette 11",
+        "type": "color",
+        "value": "0.333333 1.0 0.333333"
+      },
+      "palette11": {
+        "order": 21,
+        "text": "Image palette 12",
+        "type": "color",
+        "value": "1.0 1.0 0.333333"
+      },
+      "palette12": {
+        "order": 22,
+        "text": "Image palette 13",
+        "type": "color",
+        "value": "0.333333 0.333333 1.0"
+      },
+      "palette13": {
+        "order": 23,
+        "text": "Image palette 14",
+        "type": "color",
+        "value": "1.0 0.333333 1.0"
+      },
+      "palette14": {
+        "order": 24,
+        "text": "Image palette 15",
+        "type": "color",
+        "value": "0.333333 1.0 1.0"
+      },
+      "palette15": {
+        "order": 25,
+        "text": "Image palette 16",
+        "type": "color",
+        "value": "1.0 1.0 1.0"
+      }
+    }
+  }
+}

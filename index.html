@@ -5,10 +5,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#1a0033">
-	<meta name="description" content="MAKRORK — games, apps and tools.">
+	<meta name="description" content="Customizable Matrix rain and image-to-ASCII wallpaper.">
 	<title>walp</title>
 	<link rel="preload" href="src/assets/FiraCodeNerdFont-Regular.ttf" as="font" type="font/ttf" crossorigin>
 	<link rel="stylesheet" href="src/style.css">
+	<script>
+		// Register immediately so startup settings cannot be lost before script.js loads.
+		window.walpPendingProperties = {};
+		window.wallpaperPropertyListener = {
+			applyUserProperties: function (properties) {
+				Object.assign(window.walpPendingProperties, properties);
+			}
+		};
+	</script>
 	<script src="src/script.js" defer></script>
 </head>
 
