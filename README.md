@@ -25,33 +25,4 @@ For a browser preview, open `index.html`. It defaults to classic rain until an i
 | Background color | Canvas background, independent of all character colors. |
 | Image palette 01–16 | Individual colors used for nearest-color image quantization. |
 
-Density uses `scale = 50 / density`:
 
-```js
-MIN_DIST = Math.max(1, Math.round(4 * scale));
-MAX_DIST = Math.max(MIN_DIST, Math.round(15 * scale));
-PROB = Math.max(0, Math.round(11 * scale) - 1);
-```
-
-At density 50 these are exactly `4`, `15`, `10`. After the minimum gap, a stream starts with probability `1 / (PROB + 1)` per animation step; after the maximum gap it starts unconditionally. Distance is measured in character rows after the newest stream's tail.
-
-## Code
-
-- `src/script.js`: original grid, image sampling, stream animation and changed-cell rendering; Wallpaper Engine callbacks are at the bottom.
-- `src/style.css`: font and layout defaults.
-- `project.json`: property names, defaults and limits. Keep defaults in sync with JS/CSS when editing.
-
-The animation targets 24 steps/s and respects lower Wallpaper Engine FPS limits and pause events. Rapid image/settings changes discard stale image-processing results. Fixed missing gradient decoding, font URL, last-row rendering and stream spacing/removal checks from the original.
-
-API reference: [Wallpaper Engine user properties](https://docs.wallpaperengine.io/en/web/customization/properties.html).
-
-## Rename the GitHub repository
-
-On GitHub: **Settings → General → Repository name → Rename**. Then run inside the existing local clone:
-
-```sh
-git remote set-url origin https://github.com/MAKRORK/NEW_NAME.git
-git remote -v
-```
-
-Commits, branches and local changes stay intact; no new clone or `git init` is needed. Renaming the local directory is optional. GitHub redirects the old repository URL, but updating `origin` is recommended.
