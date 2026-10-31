@@ -1,4 +1,4 @@
-# walp
+# Matrix Image
 
 Canvas-based Matrix rain wallpaper for Wallpaper Engine. Streams can reveal an image using ASCII brightness and a configurable 16-color palette, or run as classic cmatrix-style rain with bright heads. Plain HTML/CSS/JavaScript, no build step or dependencies.
 
